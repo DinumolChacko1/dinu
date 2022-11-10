@@ -1,0 +1,20 @@
+{%extends 'theme.html'%}
+{%block content%}
+<h1><center>kitchen utilities</center></h1>
+<div class="container">
+  <div class="row">
+{%for item in Product%}
+    <div class="col-md-3">
+<div class="card">
+  <img class="card-img-top" src="{{item.image}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{item.name}}</h5>
+    <p class="card-text">{{item.price}}</p>
+    <a href="https://www.google.com/search?q=washing+machine+images&rlz=1C1RXQR_enIN988IN988&ei=4K1sY9eTCeS84-EPu7u92Aw&oq=washing&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMgUIABCRAjIHCAAQsQMQQzIKCC4QsQMQ1AIQQzIKCAAQsQMQgwEQQzIECAAQQzIECC4QQzIFCAAQkQIyCwgAELEDEMkDEJECMgQIABBDMgQILhBDOgoIABBHENYEELADOgcIABCwAxBDOgUIABCABDoRCAAQjwEQjwEQ6gIQjAMQ5QI6CwgAEIAEELEDEIMBOg4ILhCDARDUAhCxAxCABDoQCC4QsQMQgwEQxwEQ0QMQQzoKCAAQsQMQyQMQQzoKCC4Q1AIQsQMQQ0oECEEYAEoECEYYAFCcBFiAI2DLNGgCcAF4BIABvwGIAfEMkgEEMC4xMpgBAKABAbABCsgBCsABAQ&sclient=gws-wiz-serp#imgrc=ZaXhxhvQVlfI5M" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+{%endfor%}
+  </div>
+</div>
+{%endblock%}
